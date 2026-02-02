@@ -8,7 +8,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       "/api": {
-        target: "https://dev-code-ide-server.vercel.app",
+        target: "http://localhost:5050/",
         changeOrigin: true,
         secure: false,
       },
